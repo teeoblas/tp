@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="estilo.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.js">
 </head>
 <body>
     <header class="header">
@@ -30,5 +31,19 @@
         <h3>¿Que estudiamos?</h3>
         <p>alumnos de TUDAI, UNICEN Tandil.</p>
     </section>
+
+    <h2>Deja tu opinión sobre nuestra página:</h2>
+        <form id="opinionForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="opinion">Opinión:</label>
+            <textarea id="opinion" name="opinion" required></textarea>
+
+            <input type="submit" value="Enviar opinión">
+        </form>
+    </section>
+
+     
 </body>
 </html>
