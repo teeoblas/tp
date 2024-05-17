@@ -1,0 +1,95 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    color: aliceblue;
+
+}
+
+body {
+    width: auto;
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/fondo-body.jpg);
+    background-size: auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    justify-content: left;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    font-size: 26px;
+
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.container-nav .navlist {
+    position: absolute;
+    left: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 30vw;
+    height: 10%;
+    padding: 1px;
+    background-color: rgba(122, 121, 121, 0.5);
+    position: sticky;
+    top: auto;
+    border-radius: 100px;
+}
+
+.container-nav .navlist li a {
+    color: white;
+}
+
+.container-nav .navlist li {
+    padding: 10px;
+    border-radius: 20px;
+    transition: all 0.3s linear;
+}
+
+.container-nav .navlist li:hover {
+    background-color: grey;
+}
+
+.recomendado, .container-compras{
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: auto;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.container-recomendado, .container-compras{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+
+}
+
+.fotos {
+    width: 300px;
+    height: 430px;
+    transition: all 1s linear;
+}
+
+.fotos:hover{
+    border: 1px solid white;
+}
+
+.nombreLibro {
+    font-size: 25px;
+}
+
+.libros {
+    text-align: center;
+}
