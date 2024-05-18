@@ -1,20 +1,19 @@
+/* css principal */
 * {
     list-style: none;
     text-decoration: none;
-    color: aliceblue;
-
+    color: rgb(255, 255, 255);
 }
 
 body {
     width: auto;
     height: auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/fondo-body.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/fondo-body.jpg);
     background-size: auto;
     background-attachment: fixed;
     background-repeat: no-repeat;
     justify-content: left;
 }
-
 
 .header {
     display: flex;
@@ -22,36 +21,37 @@ body {
     justify-content: center;
     align-items: center;
     width: auto;
-    font-size: 26px;
+    font-size: xx-large;
 
 }
 
 h1 {
     display: flex;
-    justify-content: center;
+    text-align: center;
+}
+
+.container-nav {
+    display: flex;
+    width: 50vw;
+    position: sticky;
+    left: 25vw;
+    top: 0px;
+    z-index: 100;
 }
 
 .container-nav .navlist {
-    position: absolute;
-    left: 50vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 30vw;
+    width: 50vw;
     height: 10%;
-    padding: 1px;
-    background-color: rgba(122, 121, 121, 0.5);
-    position: sticky;
-    top: auto;
+    background-color: rgba(98, 96, 96, 0.634);
     border-radius: 100px;
-}
-
-.container-nav .navlist li a {
-    color: white;
+    padding: 8px;
 }
 
 .container-nav .navlist li {
-    padding: 10px;
+    padding: 8px;
     border-radius: 20px;
     transition: all 0.3s linear;
 }
@@ -60,15 +60,16 @@ h1 {
     background-color: grey;
 }
 
-.recomendado, .container-compras{
+.grid {
     display: grid;
-    grid-template-columns: repeat(4, 300px);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: auto;
     width: 100%;
     justify-content: space-evenly;
+    margin-top: 20px;
 }
 
-.container-recomendado, .container-compras{
+.container-recomendado {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -76,20 +77,134 @@ h1 {
 
 }
 
+.container-recomendado h2 {
+    text-align: center;
+}
+
 .fotos {
     width: 300px;
     height: 430px;
-    transition: all 1s linear;
+    transition: all 0.3s linear;
 }
 
-.fotos:hover{
-    border: 1px solid white;
+.fotos:hover {
+    box-shadow: 5px 5px 15px rgb(188, 109, 13);
 }
 
 .nombreLibro {
-    font-size: 25px;
+    font-size: xx-large;
+    margin: 15px 0px;
 }
 
 .libros {
     text-align: center;
+}
+
+.descript {
+    font-size: larger;
+    font-weight: 100px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.descript div a {
+    color: aqua;
+}
+
+.descript div a:hover {
+    color: rgb(241, 226, 62);
+}
+
+/* .descript h2{
+    background-image: url(url);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+} */
+
+.autor {
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+/* css de compras */
+
+.container-compras {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+.compra {
+    text-align: center;
+}
+
+.fotocompra {
+    width: 150px;
+    height: 200px;
+    transition: all 0.3s linear;
+}
+
+.fotocompra:hover {
+    box-shadow: 5px 5px 15px rgb(188, 109, 13);
+}
+
+.nombreCompra {
+    font-size: 20px;
+}
+
+/* contacto */
+
+
+.container-contact {
+    text-align: center;
+    width: 60vw;
+    margin: auto;
+}
+
+.container-contact h3 {
+    margin-bottom: 10px;
+    font-size: xx-large;
+}
+
+.container-contact table {
+    background: linear-gradient(rgba(70, 70, 70, 0.659), rgba(0, 0, 0, 0.275));
+    background-size: cover;
+}
+
+.container-contact th,
+td {
+    text-align: center;
+    width: 60vw;
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+
+.perfil {
+    width: 200px;
+}
+
+.foto-wsp {
+    transition: all 1s;
+    border-radius: 48px;
+}
+
+.foto-wsp:hover {
+    filter: drop-shadow(0px 0px 3px rgb(68, 199, 68));
+    transform: rotateY(180deg);
+}
+
+.info-redes p {
+    margin: 5px auto;
+}
+
+.foto-mail{
+    transition: all 1s;
+    border-radius: 48px;
+}
+
+.foto-mail:hover{
+    filter: drop-shadow(0px 0px 3px rgb(222, 33, 33));
+    transform: rotateY(180deg);
 }
