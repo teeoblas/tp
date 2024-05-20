@@ -4,17 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabajo Práctico Especial 1</title>
+    <title>Your Library</title>
     <link rel="stylesheet" href="estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
 </head>
 
 <body>
     <header class="header">
 
-        <h1>TITULO PAGINA</h1>
+        <h1>Your Library</h1>
+
+        <img id="menuicon" src="images/menu-icon-white.png" alt="Menu Icon">
 
     </header>
 
@@ -22,7 +24,7 @@
         <ul class="navlist">
             <li><a href="index.html">INICIO</a></li>
             <li><a href="compras.html">COMPRAS</a></li>
-            <li><a href="info.html">INFO</a></li>
+            <li><a href="sobrenosotros.html">SOBRE NOSOTROS</a></li>
             <li><a href="contacto.html">CONTACTO</a></li>
         </ul>
     </nav>
@@ -30,9 +32,9 @@
 
     <section class="container-recomendado">
 
-        <h1>libros recomendados</h1>
+        <h2>Libros Recomendados</h2>
 
-        <div class="recomendado">
+        <div class="grid">
             <div class="libros">
                 <img class="fotos" src="images/recomendado1.jpg" alt="recomendados 1">
                 <h4 class="nombreLibro"><a href="#vermas">CIEN AÑOS DE SOLEDAD</a></h4>
@@ -56,50 +58,69 @@
         </div>
     </section>
 
-    <section>
-        <div class="info">
+    <section class="descript">
+        <div>
             <h2 id="vermas">CIEN AÑOS DE SOLEDAD</h2>
-            <h3>Gabriel García Márquez</h3>
-            <p>Cien años de soledad trata un siglo en la vida de la familia Buendía, cuyo patriarca, José Arcadio
+            <h3><sub class="autor">Gabriel García Márquez</sub></h3>
+            <cite>Cien años de soledad trata un siglo en la vida de la familia Buendía, cuyo patriarca, José Arcadio
                 Buendía, fundó el pueblo ficticio de Macondo, en Colombia. La novela es considerada una obra maestra de
-                la literatura latinoamericana y uno de los ejemplos clásicos del realismo mágico.</p>
+                la literatura latinoamericana y uno de los ejemplos clásicos del realismo mágico. </cite>
             <a target="_blank"
                 href="https://www.unprofesor.com/lengua-espanola/cien-anos-de-soledad-resumen-corto-3845.html">mas
                 info.</a>
         </div>
 
-        <div class="info">
+        <hr>
+
+        <div>
             <h2>UN MUNDO FELIZ</h2>
-            <h3>Aldous Huxley</h3>
-            <p>Se trata de una de las distopías más famosas del siglo XX. En ella, Huxley presenta un mundo futuro
+            <h3><sub class="autor">Aldous Huxley </sub></h3>
+            <cite>Se trata de una de las distopías más famosas del siglo XX. En ella, Huxley presenta un mundo futuro
                 deshumanizado en el que la sociedad está dividida en un sistema de castas en el que los individuos están
-                creados y alterados genéticamente.</p>
+                creados y alterados genéticamente.</cite>
             <a target="_blank"
                 href="https://www.culturagenial.com/es/libro-un-mundo-feliz-de-aldous-huxley/#:~:text=Se%20trata%20de%20una%20de,est%C3%A1n%20creados%20y%20alterados%20gen%C3%A9ticamente.">mas
                 info.</a>
         </div>
 
-        <div class="info">
+        <hr>
+
+        <div>
             <h2>1984</h2>
-            <h3>George Orwell</h3>
-            <p>Orwell presenta un futuro en el que una dictadura totalitaria interfiere hasta tal punto en la vida
-                privada de los ciudadanos que resulta imposible escapar a su control.</p>
+            <h3><sub class="autor">George Orwell</sub></h3>
+            <cite>Orwell presenta un futuro en el que una dictadura totalitaria interfiere hasta tal punto en la vida
+                privada de los ciudadanos que resulta imposible escapar a su control. </cite>
             <a target="_blank"
                 href="https://www.fundaciobit.org/es/george-orwell-1984-2/#:~:text=1984%20es%20un%20cl%C3%A1sico%20literario,la%20capital%20de%20Ocean%C3%ADa%2C%20Londres.">mas
                 info.</a>
         </div>
 
-        <div class="info">
+        <hr>
+
+        <div>
             <h2>EN BUSCA DEL TIEMPO PERDIDO</h2>
-            <h3>Marcel Proust</h3>
-            <p>En este volumen el narrador nos lleva por pasajes de su infancia y hacia su adolescencia, en la cual el
+            <h3><sub class="autor">Marcel Proust</sub></h3>
+            <cite>En este volumen el narrador nos lleva por pasajes de su infancia y hacia su adolescencia, en la cual
+                el
                 creciente interés que siente por diversas mujeres en un viaje que realiza con su abuela al balneario de
-                Balbec desplaza a aquél que sentía por Gilberte, la hija de Swann.</p>
+                Balbec desplaza a aquél que sentía por Gilberte, la hija de Swann.</cite>
             <a target="_blank"
                 href="https://www.casadellibro.com/libro-en-busca-del-tiempo-perdido-vol-1-por-la-parte-de-swann/9788426412904/708021">mas
                 info.</a>
         </div>
     </section>
+
+
+
+
+
+    <footer class="pieDePagina">
+        <p>fecha entrega: 22/5/2024</p>
+        <p>comision: B</p>
+        <p>piedepag</p>
+        <p>piedepag</p>
+    </footer>
+
 
 </body>
 

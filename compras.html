@@ -4,37 +4,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Your Library</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
 </head>
 
 <body>
 
     <header class="header">
 
-        <h1>TITULO PAGINA</h1>
-
+        <h1>Your Library</h1>
+        <img id="menuicon" src="images/menu-icon-white.png" alt="Menu Icon">
     </header>
 
     <nav class="container-nav">
         <ul class="navlist">
             <li><a href="index.html">HOME</a></li>
             <li><a href="compras.html">COMPRAS</a></li>
-            <li><a href="info.html">INFO</a></li>
+            <li><a href="sobrenosotros.html">SOBRE NOSOTROS</a></li>
             <li><a href="contacto.html">CONTACTO</a></li>
         </ul>
     </nav>
 
+    <!-- fotos -->
+
     <section class="container-compras">
-        <ul>
-            <li><a
-                    href="https://www.iberlibro.com/?&ref_=ps_ggl_54480861&cm_mmc=ggl-_-ES_Brand_Brand-_-naa-_-keyword=abbbook&gclid=CjwKCAjwupGyBhBBEiwA0UcqaLiwb81VbdQRDqQgCRe-IyvbyS9djGbW_e2UN-MNfnjTZ3EZk9mrfhoCpXsQAvD_BwE"><img class="fotos" src="/images/recomendado1.jpg" alt="comprar">comprar</a></li>
-            <li><a
-                    href="https://es.scribd.com/?utm_medium=cpc&utm_source=google_search&utm_campaign=Scribd_Google_Search_Beta_Brand_RoW&utm_adgroup=Scribd-General&utm_term=scribd&utm_matchtype=e&utm_device=c&utm_network=g&gad_source=1&gclid=CjwKCAjwupGyBhBBEiwA0UcqaK_SEgmONEn7sSfYEearL9-GqqyzXmmmussJwAq-jikTKGEMJD1xaBoC7E0QAvD_BwE"><img class="fotos" src="/images/recomendado2.jpg" alt="comprar">comprar</a></li>
-            <li><a href="https://www.24symbols.com/?locale=es"><img class="fotos" src="/images/recomendado3.jpg" alt="comprar">comprar</a></li>
-            <li><a href="https://www.casadellibro.com/"><img class="fotos" src="/images/recomendado4.jpg" alt="comprar">comprar</a></li>
-        </ul>
+        <div class="grid">
+            <div class="compra">
+                <a target="_blank"
+                    href="https://www.yenny-elateneo.com/MLA-686331968-cien-anos-de-soledad-bolsillo-gabriel-garcia-marquez-_JM"><img
+                        class="fotocompra" src="images/recomendado1.jpg" alt="compra1"></a>
+                <h4 class="nombreCompra"><a
+                        href="https://www.yenny-elateneo.com/MLA-686331968-cien-anos-de-soledad-bolsillo-gabriel-garcia-marquez-_JM">COMPRAR
+                        LIBRO</a></h4>
+            </div>
+
+            <div class="compra">
+                <a target="_blank" href="https://www.sbs.com.ar/un-mundo-feliz---aldous-huxley-9871138512/p"><img
+                        class="fotocompra" src="images/recomendado2.jpg" alt="recomendado 2"></a>
+                <h4 class="nombreCompra"><a
+                        href="https://www.sbs.com.ar/un-mundo-feliz---aldous-huxley-9871138512/p">COMPRAR LIBRO</a></h4>
+            </div>
+
+            <div class="compra">
+                <a target="_blank" href="https://www.buscalibre.com.ar/libro-1984/9789875669284/p/34494617"><img
+                        class="fotocompra" src="images/recomendado3.jpg" alt="recomendado 3"></a>
+                <h4 class="nombreCompra"><a
+                        href="https://www.buscalibre.com.ar/libro-1984/9789875669284/p/34494617">COMPRAR LIBRO</a></h4>
+            </div>
+
+            <div class="compra">
+                <a target="_blank" href="https://www.tematika.com/en-busca-del-tiempo-perdido-9788416540457.html"><img
+                        class="fotocompra" src="images/recomendado4.jpg" alt="recomendado 4"></a>
+                <h4 class="nombreCompra"><a
+                        href="https://www.tematika.com/en-busca-del-tiempo-perdido-9788416540457.html">COMPRAR LIBRO</a>
+                </h4>
+            </div>
+        </div>
+
     </section>
+
+
+    <!-- lista de ... -->
+
+    <section class="linkcompra">
+        <div>
+            <h4>LINKS DE LECTURA VIRTUAL</h4>
+            <ul>
+                <li><a target="_blank"
+                        href="https://www.elejandria.com/libros/a">▸https://www.elejandria.com/libros/a</a></li>
+                <li><a target="_blank"
+                        href="https://es.wikisource.org/wiki/Portada">▸https://es.wikisource.org/wiki/Portada</a>
+                </li>
+                <li><a target="_blank" href="https://pdf-libros.com/">▸https://pdf-libros.com/</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>LINKS PARA COMPRAR LIBROS</h4>
+            <ul>
+                <li><a target="_blank"
+                        href="https://www.planetadelibros.com.ar/">▸https://www.planetadelibros.com.ar/</a></li>
+                <li><a target="_blank" href="https://www.librenta.com/">▸https://www.librenta.com/</a></li>
+                <li><a target="_blank" href="https://www.argentinabooks.com.ar/">▸https://www.argentinabooks.com.ar/</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="pieDePagina">
+        <p>fecha entrega: 22/5/2024</p>
+        <p>comision: B</p>
+        <p>piedepag</p>
+        <p>piedepag</p>
+    </footer>
 
 </body>
 

@@ -1,57 +1,79 @@
+/* css principal */
 * {
     list-style: none;
     text-decoration: none;
-    color: aliceblue;
-
+    color: rgb(255, 255, 255);
 }
 
 body {
     width: auto;
     height: auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/fondo-body.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/fondo-body.jpg);
     background-size: auto;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    justify-content: left;
+    justify-content: center;
+    margin: 0px;
 }
-
 
 .header {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: auto;
-    font-size: 26px;
-
 }
 
-h1 {
+.pieDePagina {
     display: flex;
     justify-content: center;
+    background-color: rgba(98, 96, 96, 0.634);
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    margin-top: 150px;
+}
+
+.pieDePagina p {
+    margin: 5vh 5vw;
+}
+
+
+#menuicon {
+    width: 36px;
+    height: 36px;
+    position: fixed;
+    right: 15px;
+    background-color: rgba(89, 30, 0, 0.927);
+    border-radius: 36px;
+}
+
+
+h1 {
+    font-size: xx-large;
+}
+
+.container-nav {
+    display: none;
+    width: 50vw;
+    position: sticky;
+    left: 25vw;
+    top: 0px;
+    z-index: 100;
 }
 
 .container-nav .navlist {
-    position: absolute;
-    left: 50vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 30vw;
+    width: 50vw;
     height: 10%;
-    padding: 1px;
-    background-color: rgba(122, 121, 121, 0.5);
-    position: sticky;
-    top: auto;
+    background-color: rgba(98, 96, 96, 0.634);
     border-radius: 100px;
-}
-
-.container-nav .navlist li a {
-    color: white;
+    padding: 8px;
 }
 
 .container-nav .navlist li {
-    padding: 10px;
+    padding: 8px;
     border-radius: 20px;
     transition: all 0.3s linear;
 }
@@ -60,36 +82,211 @@ h1 {
     background-color: grey;
 }
 
-.recomendado, .container-compras{
+.grid {
     display: grid;
-    grid-template-columns: repeat(4, 300px);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: auto;
     width: 100%;
     justify-content: space-evenly;
+    margin-top: 20px;
 }
 
-.container-recomendado, .container-compras{
+.container-recomendado {
     width: 100%;
     display: flex;
     flex-direction: column;
-    font-size: 25px;
+    font-size: medium;
 
+}
+
+.container-recomendado h2 {
+    text-align: center;
 }
 
 .fotos {
-    width: 300px;
-    height: 430px;
-    transition: all 1s linear;
+    width: 200px;
+    height: 280px;
+    transition: all 0.3s linear;
 }
 
-.fotos:hover{
-    border: 1px solid white;
+.fotos:hover {
+    box-shadow: 5px 5px 15px rgb(188, 109, 13);
 }
 
 .nombreLibro {
-    font-size: 25px;
+    font-size: medium;
+    margin: 15px 0px;
 }
 
 .libros {
     text-align: center;
+}
+
+.descript {
+    font-size: medium;
+    font-weight: 100px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.descript div a {
+    color: aqua;
+}
+
+.descript div a:hover {
+    color: rgb(241, 226, 62);
+}
+
+.autor {
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+/* css de compras */
+
+.container-compras {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+.compra {
+    text-align: center;
+}
+
+.fotocompra {
+    width: 200px;
+    height: 280px;
+    transition: all 0.3s linear;
+}
+
+.fotocompra:hover {
+    box-shadow: 5px 5px 15px rgb(188, 109, 13);
+}
+
+.nombreCompra {
+    font-size: 20px;
+}
+
+
+.linkcompra {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5vh;
+}
+
+
+
+/* contacto */
+
+.container-contact {
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.container-contact h3 {
+    margin-bottom: 10px;
+    font-size: xx-large;
+}
+
+.container-contact table {
+    background: linear-gradient(rgba(70, 70, 70, 0.659), rgba(0, 0, 0, 0.275));
+    background-size: cover;
+}
+
+.container-contact th,
+td {
+    text-align: center;
+    width: 60vw;
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+
+.perfil {
+    width: 150px;
+    height: 150px;
+}
+
+.foto-wsp {
+    transition: all 1s;
+    border-radius: 48px;
+}
+
+.foto-wsp:hover {
+    filter: drop-shadow(0px 0px 3px rgb(68, 199, 68));
+    transform: rotateY(180deg);
+}
+
+.info-redes p {
+    margin: 5px auto;
+}
+
+.foto-mail {
+    transition: all 1s;
+    border-radius: 48px;
+}
+
+.foto-mail:hover {
+    filter: drop-shadow(0px 0px 3px rgb(222, 33, 33));
+    transform: rotateY(180deg);
+}
+
+
+
+
+/* sobre nosotros */
+
+.nosotros {
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.celdas {
+    background: linear-gradient(rgba(14, 13, 13, 0.634), rgba(14, 10, 10, 0.634));
+    margin-bottom: 20px;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+    .container-nav {
+        display: flex;
+    }
+
+    .container-contact {
+        width: 60vw;
+    }
+
+    .perfil {
+        width: 200px;
+    }
+
+    #menuicon {
+        display: none;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    .formulario textarea {
+        width: 500px;
+        height: 100px;
+    }
+
+    .perfil{
+        width: 200px;
+        height: 200px;
+    }
 }
